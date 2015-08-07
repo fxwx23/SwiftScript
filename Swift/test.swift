@@ -1,9 +1,12 @@
 #!/usr/bin/env xcrun swift -F Carthage/Build/iOS
 
 import Cocoa
-import Alamofire
-import PrettyColors
+
+func getDate() -> String {
+    let date = NSDate()
+    return "\(date)"
+}
 
 var alert = NSAlert()
-alert.messageText = "Hello, Swift"
-alert.runModal()git 
+alert.messageText = getDate()
+alert.runModal()
